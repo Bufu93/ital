@@ -5,11 +5,12 @@
 @layer base {
     body {
         font-family: 'Open sans' , sans-serif;
+        min-width: 375px;
     }
 }
 
 @layer components {
     .btn {
-        @apply  px-[58px] py-[18px] bg-gold text-white font-bold text-[14px] leading-[19px]
+        @apply  px-[58px] py-[18px] bg-gold text-white font-bold text-[14px] leading-[19px] sm:max-w-[313px] text-center
     }
 }

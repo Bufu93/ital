@@ -14,21 +14,35 @@
     <!-- header -->
     <header class="py-3 bg-transparent z-10 absolute left-0 right-0">
         <div class="container px-[38px] flex justify-between items-center">
-            <div>
+            <div class="z-50">
                 <img src="/dist/img/logo.png" width="85" height="33" alt="Лого">
             </div>
-            <div>
-                <img src="/dist/img/burger.svg" width="60" height="16" alt="Бургер меню">
-            </div>
+            <ul id="burger-body" class="absolute bg-lightblack inset-0 h-[250px] text-center space-y-3 pt-[80px] hidden">
+                <li>
+                    <a class="text-white text-[18px] leading-[25px]" href="#">Наши проекты</a>
+                </li>
+                <li>
+                    <a class="text-white text-[18px] leading-[25px]" href="#">Медиа</a>
+                </li>
+                <li>
+                    <a class="text-white text-[18px] leading-[25px]" href="#">О нас</a>
+                </li>
+                <li>
+                    <a class="text-white text-[18px] leading-[25px]" href="#">Контакты</a>
+                </li>
+            </ul>
+            <button id="burger-btn" class="z-50 cursor-pointer">
+                <img id="burger-icon" src="/dist/img/burger.svg" width="60" height="16" alt="Бургер меню">
+            </button>
         </div>
     </header>
     <!-- header-end -->
     <main class="">
         <!-- hero -->
         <section class="bg-[url('/dist/img/bg-hero.jpg')] bg-cover bg-center h-screen mb-14">
-            <div class="container px-[38px] pt-20 h-full relative">
+            <div class="container px-[38px] pt-20 h-full relative flex flex-col items-center">
                 <h1 class="font-bold text-2xl text-white max-w-[313px] pb-5 leading-9">Проектирование элитной недвижимости «под ключ»</h1>
-                <p class="font-normal text-white text-lg pb-4">Запишитесь на бесплатную онлайн консультацию</p>
+                <p class="font-normal text-white text-lg pb-4 max-w-[313px]">Запишитесь на бесплатную онлайн консультацию</p>
                 <button class="text-center btn w-full">Записаться</button>
                 <div class="absolute bottom-7 right-0 left-0 flex justify-center items-center space-x-3">
                     <div class="border border-white  w-[12px] h-[12px] rounded-full"></div>
@@ -42,9 +56,9 @@
         </section>
         <!-- hero-end -->
         <section class="mb-14">
-            <div class="container px-[38px]">
+            <div class="container px-[38px] text-center">
                 <h3 class="font-bold text-[25px] leading-[34px] mb-[40px] text-tblack">Наши услуги</h3>
-                <div class="flex flex-col gap-[30px]">
+                <div class="flex flex-col items-center gap-[30px] md:flex-row md:flex-wrap md:justify-center">
                     <div class="bg-[url('/dist/img/service1.png')] bg-contain w-[300px] h-[300px] flex flex-col justify-center items-center text-center group opacity-70 hover:opacity-100 transition-opacity">
                         <p class="font-bold text-[20px] leading-[27px] text-white mb-[20px] opacity-0 group-hover:opacity-100 transition-opacity">Загородный дом</p>
                         <button class="btn opacity-0 group-hover:opacity-100 transition-opacity">Посмотреть</button>
@@ -62,17 +76,17 @@
         </section>
         <!-- gallery -->
         <section class="mb-14">
-            <div class="container px-[38px]">
+            <div class="container px-[38px] flex flex-col items-center">
                 <h3 class="font-bold text-[24px] leading-[33px] mb-[40px] text-tblack">Присоединяйтесь к нам в Instagram</h3>
-                <div class="grid gap-[20px] grid-cols-2">
-                    <img src="/dist/img/insta1.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta2.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta3.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta4.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta5.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta6.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta7.png" width="140" height="140" alt="фото в галерее">
-                    <img src="/dist/img/insta8.png" width="140" height="140" alt="фото в галерее">
+                <div class="flex flex-wrap items-center justify-between gap-[18px] md:gap-[40px] md:flex-nowrap md:grid md:grid-cols-[1fr_1fr_1fr_1fr] md:grid-rows-[1fr_1fr] w-full">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta1.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta2.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta3.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta4.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta5.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta6.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta7.png" alt="фото в галерее">
+                    <img class="w-[140px] h-[140px] lg:w-full lg:h-full lg:max-w-[260px] lg:max-h-[260px]" src="/dist/img/insta8.png" alt="фото в галерее">
                 </div>
                 <button class="btn w-full mt-[66px] mb-[100px]">Присоедениться</button>
             </div>
@@ -81,27 +95,52 @@
     </main>
     <!-- footer -->
     <footer class="bg-lightblack min-h-[530px] pt-[89px] pb-[50px]">
-        <div class="container px-[38px]">
-            <div class="gap-y-[50px] gap-x-[18px] grid grid-cols-[110px_1fr] grid-rows-[60px_56px_45px] mb-[90px]">
+        <div class="container px-[38px] ">
+            <div class="lg:border-b lg:border-gold lg:justify-between gap-y-[50px] gap-x-[18px] grid grid-cols-[110px_1fr] grid-rows-[60px_56px_1fr] mb-[90px] lg:grid-cols-[280px_172px_216px_262px] lggrid-rows-[1fr]">
                 <div class="">
-                    <img src="/dist/img/logo.svg" width="110" height="59" alt="Лого">
+                    <img class="lg:hidden" src="/dist/img/logo.svg" width="110" height="59" alt="Лого">
+                    <img class="hidden lg:block" src="/dist/img/big-logo.png" width="280" height="120" alt="Большое лого">
                 </div>
-                <div class="space-y-[10px]">
+                <div class="lg:order-3 space-y-[10px] flex flex-col items-end lg:items-start">
+                    <h4 class="hidden lg:block text-white font-bold text-left">Контакты</h4>
                     <a class="flex items-center text-white text-[14px] leading-[19px]" href="tel:+74994091612"><img class="mr-[10px]" src="/dist/img/phone.svg" width="18" height="18" alt="Телефон">+ 7 (499) 409-16-12</a>
                     <a class="flex items-center text-white text-[14px] leading-[19px]" href="mailto:italproekt@gmail.com"><img class="mr-[10px]" src="/dist/img/mail.svg" width="18" height="18" alt="Телефон">italproekt@gmail.com</a>
                 </div>
-                <div class="col-span-full flex items-center space-x-[33px]">
-                    <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/fb-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/fb.png')] transition-all" href="#"></a>
-                    <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/youtube-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/youtube.png')] transition-all" href="#"></a>
-                    <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/p-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/p.png')] transition-all" href="#"></a>
-                    <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/instagram-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/instagram.png')] transition-all" href="#"></a>
-                </div>
-                <div class="col-span-full flex flex-col justify-between items-center border-y border-gold py-[10px]">
-                    <div class="flex justify-between items-center w-full">
-                        <span class="text-white font-bold">Информация</span>
-                        <span class="text-white font-bold">+</span>
+                <div class="lg:order-last lg:col-span-1 space-y-[10px] col-span-full">
+                    <h4 class="hidden lg:block text-white font-bold">Соц. сети</h4>
+                    <div class="w-full flex items-center justify-center lg:space-x-[20px] space-x-[33px]">
+                        <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/fb-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/fb.png')] transition-all" href="#"></a>
+                        <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/youtube-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/youtube.png')] transition-all" href="#"></a>
+                        <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/p-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/p.png')] transition-all" href="#"></a>
+                        <a class="flex justify-center items-center w-[50px] h-[50px] border border-gold bg-[url('/dist/img/instagram-gold.png')] bg-no-repeat bg-center hover:bg-gold hover:bg-[url('/dist/img/instagram.png')] transition-all" href="#"></a>
                     </div>
-                    <ul class="hidden">
+                </div>
+                <div class="hidden lg:block order-2">
+                    <h4 class="hidden lg:block text-white font-bold">Информация</h4>
+                    <ul  class=" mt-[10px] tex-left space-y-[10px] w-full">
+                        <li>
+                            <a class="text-white" href="#">Загородные дома</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Квартиры</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Нежилые помещения</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Медиафайлы</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">О компании</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:hidden order-2 lg:col-span-1 col-span-full flex flex-col mx-auto justify-between border-y border-gold py-[10px] max-w-[500px] w-full">
+                    <div id="footer-drop" class="flex justify-between items-center w-full  cursor-pointer">
+                        <span class="text-white font-bold">Информация</span>
+                        <span id="footer-plus" class="text-white font-bold">+</span>
+                    </div>
+                    <ul id="footer-list" class="translate-y-[-100%] mt-[10px] w-full tex-left transition-all hidden">
                         <li>
                             <a class="text-white" href="#">Загородные дома</a>
                         </li>
@@ -120,12 +159,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="text-center space-y-[10px]">
+            <div class="text-center space-y-[10px] sm:flex items-center justify-between sm:space-y-0">
                 <a class="block underline text-white text-[14px] leading-[19px]" href="#">Политика конфиденциальности</a>
                 <a class="block underline text-white text-[14px] leading-[19px]" href="#">designed by Linar</a>
             </div>
         </div>
     </footer>
     <!-- footer-end -->
+    <script src="/dist/main.js"></script>
 </body>
 </html>
