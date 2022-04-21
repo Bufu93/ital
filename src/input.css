@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Open sans' , sans-serif;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply  px-[58px] py-[18px] bg-gold text-white font-bold text-[14px] leading-[19px]
+    }
+}
